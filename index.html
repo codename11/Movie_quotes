@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Quote Machine</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="scripta.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<meta charset="utf-8">
+<meta name="description" content="Movie quotes">
+<meta name="keywords" content="movie quotes, film quotes, films, movies, quotes, funny, sad, true">
+<meta name="author" content="Veljko Stefanović">
+<meta property="og:url"           content="https://codepen.io/codename11/full/jxqROq" />
+<meta property="og:type"          content="webapp" />
+<meta property="og:title"         content="Movie quotes app" />
+<meta property="og:description"   content="Movie quotes app" />
+<meta property="og:image"         content="https://pbs.twimg.com/profile_images/439548634028208128/A5W7Vpxg.jpeg" />
+</head>
+<body onload="rquote()" class="outer animated">
+
+  <div class="container-fluid text-center middle">
+
+    <div class="rowx">
+      <div id="quote" class="text-center q animated">
+      </div>
+      </br>
+      <div id="movie" class="animated"></div><br>
+      <div class="row">
+        <div class="twitter-share-button">
+          <a id="ank1" href="" target="_blank" data-placement="bottom" data-toggle="tooltip" title="Tweet this quote!" alt="Tweet this pen">
+    <i class="btn-icon"></i>
+    <span class="btn-text"><i id="tw" class="fa fa-twitter"></i></span>
+  </a>
+        </div>
+        </br>
+
+        <div id="ank2" class="google-button" data-placement="bottom" data-toggle="tooltip" title="Share it on google plus!">
+          <div class="g-plus" data-action="share" data-width="300"></div>
+        </div>
+
+        <button id="btn" class="btn btn-default" onclick="rquote()">New Quote</button>
+
+        <div class="clear"></div>
+
+      </div>
+
+    </div>
+    <div class="made-by"> by <a href="https://codepen.io/codename11/" target="_blank" style="color: white;">codename11</a></div>
+</body>
+</html>
